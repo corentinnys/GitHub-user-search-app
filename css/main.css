@@ -1,31 +1,35 @@
-body{background-color: #03293EFF;font-family: 'Poppins', sans-serif;}
+@charset "UTF-8";
+body {
+  background-color: #03293e;
+  font-family: "Poppins", sans-serif;
+}
 
-
-.container{
+.container {
   width: 50%;
   margin: 0 auto;
   padding: 8rem;
 }
-header{
+
+header {
   margin-bottom: 4rem;
 }
-header div  {
+
+header div {
   display: flex;
   justify-content: space-between;
-
 }
-header div h1{
+
+header div h1 {
   color: white;
 }
+
 .search-bar {
   display: flex;
   align-items: center;
   gap: 1rem;
-
   background-color: #1e2a47;
   padding: 10px 15px;
   border-radius: 12px;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -39,7 +43,6 @@ header div h1{
   border: none;
   outline: none;
   background: transparent;
-
   color: #ffffff;
   font-size: 16px;
 }
@@ -54,7 +57,6 @@ header div h1{
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
-
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease;
@@ -63,12 +65,14 @@ header div h1{
 .search-btn:hover {
   background-color: #60abff;
 }
-/*# sourceMappingURL=main.css.map */
-.user-card{
+
+
+.user-card {
   background-color: #1e2a47;
   padding: 2rem;
   border-radius: 12px;
 }
+
 .user-card {
   display: flex;
   gap: 20px; /* espace entre les colonnes */
@@ -98,34 +102,35 @@ header div h1{
 .right-column {
   flex: 1;
 }
-.stats-container{
+
+.stats-container {
   display: flex;
   gap: 2rem;
   color: white;
   background-color: #083cf1;
   justify-content: space-around;
-  padding: .5rem;
-  margin-bottom:1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
   width: 80%;
-
 }
-.info-row{
+
+.info-row {
   color: white;
   display: flex;
   gap: 2rem;
   justify-content: space-around;
-  padding: .5rem;
-  .info-item{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    width: 70%;
-    a{
-      color: white;
-      text-decoration: none;
-    }
-  }
+  padding: 0.5rem;
+}
+.info-row .info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 70%;
+}
+.info-row .info-item a {
+  color: white;
+  text-decoration: none;
 }
 
 .profile-header {
@@ -149,10 +154,14 @@ header div h1{
 .user-bio-container {
   margin-top: 10px;
 }
-.user-joined{
+
+.user-joined {
   color: white;
   margin: 0;
 }
-.user-bio-container{
+
+.user-bio-container {
   margin: 2rem;
 }
+
+/*# sourceMappingURL=main.css.map */
