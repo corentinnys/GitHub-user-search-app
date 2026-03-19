@@ -53,7 +53,7 @@ $('.theme-button').click(function (e){
         $('body').removeClass('light-mode').addClass('dark-mode')
         $('.header-title').css('color','white');
         $('.user-card').css('background-color','#1e2a47');
-        $('.stats-container').css('background','black');
+        $('.stats-container').css('background','#141C2F');
         $('.stat-item').css('color','white');
         $('.icon').removeClass('icon-dark').addClass('icon-light');
         $('.search-bar').removeClass('search-bar-light').addClass('search-bar-dark');
@@ -66,8 +66,8 @@ $('.theme-button').click(function (e){
         $(this).attr('data-theme','black')
         $('body').removeClass('dark-mode').addClass('light-mode')
         $('.header-title').css('color','black');
-        $('.user-card').css('background-color','white');
-        $('.stats-container').css('background','gray');
+        $('.user-card').css('background-color','#FEFEFE');
+        $('.stats-container').css('background','#F3F9FF');
         $('.stat-item').css('color','black');
         $('.icon').removeClass('icon-light').addClass('icon-dark');
         $('.search-bar').removeClass('search-bar-dark').addClass('search-bar-light');

@@ -1,3 +1,22 @@
+body{
+  background: #141C2F;
+}
+.theme-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.theme-switcher{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.dark-mode{
+  background: #141C2F;
+}
+.light-mode{
+  background-color: #E5EAF9;
+}
 .container{
   width: 50%;
   margin: 0 auto;
@@ -28,12 +47,12 @@ header div h1{
 
 .search-bar-light {
 
-  background-color: gray;
+  background-color: #FEFEFE;
 
 }
 .search-bar-dark{
 
-  background-color: #1e2a47;
+  background-color: #1F2A48;
 
 }
 
@@ -79,7 +98,7 @@ header div h1{
 }
 /*# sourceMappingURL=main.css.map */
 .user-card{
-  background-color: #1e2a47;
+  background-color: #1F2A48;
   padding: 2rem;
   border-radius: 12px;
 }
@@ -116,7 +135,7 @@ header div h1{
   display: flex;
   gap: 2rem;
   color: white;
-  background-color: #083cf1;
+  background-color: #141C2F;
   justify-content: space-around;
   padding: .5rem;
   margin-bottom:1rem;
