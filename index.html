@@ -10,16 +10,16 @@
     <title>Frontend Mentor | GitHub user search app</title>
 </head>
 
-<body>
+<body class="dark-mode">
 <section class="container">
 
     <header>
         <div class="header-top">
-            <h1>devfinder</h1>
+            <h1 class="header-title">devfinder</h1>
 
             <div class="theme-switcher">
                 <p class="theme-text">DARK</p>
-                <button class="theme-button" aria-label="Toggle theme">
+                <button class="theme-button" aria-label="Toggle theme" data-theme="dark">
                     <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.513 11.397a.701.701 0 00-.588.128 7.496 7.496 0 01-2.276 1.336 7.101 7.101 0 01-2.583.462 7.505 7.505 0 01-5.32-2.209 7.568 7.568 0 01-2.199-5.342c0-.873.154-1.72.41-2.49a6.904 6.904 0 011.227-2.21.657.657 0 00-.102-.924.701.701 0 00-.589-.128C5.32.61 3.427 1.92 2.072 3.666A10.158 10.158 0 000 9.83c0 2.8 1.125 5.342 2.967 7.19a10.025 10.025 0 007.16 2.98c2.353 0 4.527-.822 6.266-2.183a10.13 10.13 0 003.58-5.624.623.623 0 00-.46-.796z" fill="#697C9A"/>
                     </svg>
@@ -28,7 +28,7 @@
         </div>
 
         <!-- Search bar -->
-        <div class="search-bar">
+        <div class="search-bar search-bar-dark">
             <img src="assets/icon-search.svg" alt="Search icon" class="search-icon" />
             <input
                     type="text"
@@ -45,7 +45,7 @@
 
         <!-- Left column -->
         <div class="avatar-container">
-            <img src="assets/images/avatar-placeholder.jpg" alt="User avatar" class="user-avatar" id="avatar">
+            <img src="assets/avatar.png" alt="User avatar" class="user-avatar" id="avatar">
         </div>
 
         <!-- Right column -->
@@ -53,35 +53,37 @@
 
             <div class="profile-header">
                 <div class="profile-info">
-                    <div class="name-container">
-                        <h2 class="user-name" id="name">The Octocat</h2>
-                        <p class="user-username" id="username">@octocat</p>
+                    <div class="profile-name-section">
+                        <img src="assets/avatar.png" alt="User avatar" class="profile-avatar-small" id="profile-avatar">
+                        <div class="name-container">
+                            <h2 class="user-name" id="name">John doe</h2>
+                            <p class="user-username" id="username">@john doe</p>
+                            <p class="user-joined" id="joined"> </p>
+                        </div>
+
                     </div>
-                    <p class="user-joined" id="joined">Joined 25 Jan 2011</p>
+
                 </div>
                 <div class="user-bio-container">
                     <p class="user-bio" id="bio">
-                        Lorem ipsum dolor sit amet...
+                        .... description...
                     </p>
                 </div>
             </div>
-
-
-
             <div class="stats-container">
                 <div class="stat-item">
                     <p class="stat-label">Repos</p>
-                    <p class="stat-number" id="repos">8</p>
+                    <p class="stat-number" id="repos">/</p>
                 </div>
 
                 <div class="stat-item">
                     <p class="stat-label">Followers</p>
-                    <p class="stat-number" id="followers">3938</p>
+                    <p class="stat-number" id="followers">/</p>
                 </div>
 
                 <div class="stat-item">
                     <p class="stat-label">Following</p>
-                    <p class="stat-number" id="following">9</p>
+                    <p class="stat-number" id="following">/</p>
                 </div>
             </div>
 
@@ -95,7 +97,7 @@
                                 <use xlink:href="#icon-location"></use>
                             </svg>
                         </div>
-                        <p class="info-text" id="location">San Francisco</p>
+                        <p class="info-text" id="location">/</p>
                     </div>
 
                     <div class="info-item">

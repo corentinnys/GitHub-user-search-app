@@ -1,6 +1,3 @@
-body{background-color: #03293EFF;font-family: 'Poppins', sans-serif;}
-
-
 .container{
   width: 50%;
   margin: 0 auto;
@@ -22,11 +19,22 @@ header div h1{
   align-items: center;
   gap: 1rem;
 
-  background-color: #1e2a47;
+
   padding: 10px 15px;
   border-radius: 12px;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-light {
+
+  background-color: gray;
+
+}
+.search-bar-dark{
+
+  background-color: #1e2a47;
+
 }
 
 .search-icon {
@@ -47,6 +55,9 @@ header div h1{
 .search-input::placeholder {
   color: #a0b2d1;
 }
+.search-input-dark::placeholder{
+  color: black;
+}
 
 .search-btn {
   background-color: #0079ff;
@@ -62,6 +73,9 @@ header div h1{
 
 .search-btn:hover {
   background-color: #60abff;
+}
+#profile-avatar{
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
 .user-card{
@@ -155,4 +169,132 @@ header div h1{
 }
 .user-bio-container{
   margin: 2rem;
+}
+@media (max-width: 767px) {
+ body{
+   background: red;
+   padding: 0;
+   margin: 0;
+ }
+  .container{
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.stats-container{
+  display: flex;
+  width: 100%;
+  position: relative;
+  right: 6rem;
+
+  }
+  .user-bio-container{
+    width: 100%;
+    position: relative;
+    right: 6rem;
+  }
+  .info-container{
+    position: relative;
+    right: 6rem;
+  }
+  h2{
+    margin: 0;
+  }
+}
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+  body{
+    background: #a0b2d1;
+  }
+  .name-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-avatar-small {
+    display: none;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+   #profile-avatar{
+     display: block;
+   }
+
+  .user-name,.user-username{
+    margin: 0;
+  }
+
+  .container{
+    width: 100%;
+    padding: 0rem;
+  }
+  .user-card{
+    display: block;
+  }
+  .avatar-container{
+    display: block;
+  }
+  .stats-container{
+    display: flex;
+    gap: 2rem;
+    color: white;
+    background-color: #083cf1;
+    justify-content: space-around;
+    padding: .5rem;
+    margin-bottom:1rem;
+    border-radius: 1rem;
+    width: 90%;
+
+  }
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .name-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Style pour la nouvelle section avec l'avatar à côté du nom */
+  .profile-name-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+
+
+  /* Ajustement du profile-info existant */
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Garder le style existant pour le grand avatar dans la colonne gauche */
+  .avatar-container .user-avatar {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  /* Masquer le grand avatar si vous voulez utiliser seulement le petit */
+  .avatar-container {
+    display: none; /* Cache la colonne gauche avec le grand avatar */
+  }
+
+  /* Ajuster la largeur de la colonne droite quand la gauche est cachée */
+  .right-column {
+    flex: 1;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* styles pour desktop */
 }
